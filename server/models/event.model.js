@@ -9,18 +9,7 @@ const eventSchema = new Schema({
         required: true
     },
 
-    description: {
-        type: String,
-        trim: true,
-    },
-
-    startDate: {
-        type: Date,
-        required: true,
-        default: Date.now()
-    },
-
-    color: {
+    backgroundColor: {
         type: String,
     },
 
