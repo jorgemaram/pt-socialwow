@@ -1,0 +1,93 @@
+[{
+  "_id": {
+    "$oid": "600eaacb94c22b2f18102cda"
+  },
+  "startDate": {
+    "$date": "2021-01-25T11:26:03.265Z"
+  },
+  "title": "Reunión IT",
+  "description": "Reunión equipo IT para comentar trabajo semanal.",
+  "start": {
+    "$date": "2021-01-25T10:00:00Z"
+  },
+  "color": "green",
+  "end": {
+    "$date": "2021-01-25T10:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-01-25T11:26:03.308Z"
+  },
+  "updatedAt": {
+    "$date": "2021-01-25T11:26:03.308Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "600eaacb94c22b2f18102cdc"
+  },
+  "startDate": {
+    "$date": "2021-01-25T11:26:03.265Z"
+  },
+  "title": "Reunión previa fin de semana",
+  "description": "Reunión equipo para planes fin de semana.",
+  "start": {
+    "$date": "2021-01-29T15:30:00Z"
+  },
+  "color": "orange",
+  "end": {
+    "$date": "2021-01-29T16:45:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-01-25T11:26:03.308Z"
+  },
+  "updatedAt": {
+    "$date": "2021-01-25T11:26:03.308Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "600eaacb94c22b2f18102cd9"
+  },
+  "startDate": {
+    "$date": "2021-01-25T11:26:03.265Z"
+  },
+  "title": "Reunión contabilidad",
+  "description": "Reunión equipo contabilidad para debatir presupuestos.",
+  "start": {
+    "$date": "2021-01-26T12:30:00Z"
+  },
+  "color": "red",
+  "end": {
+    "$date": "2021-01-26T14:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-01-25T11:26:03.308Z"
+  },
+  "updatedAt": {
+    "$date": "2021-01-25T11:26:03.308Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "600eaacb94c22b2f18102cdb"
+  },
+  "startDate": {
+    "$date": "2021-01-25T11:26:03.265Z"
+  },
+  "title": "Reunión administración",
+  "description": "Reunión equipo administración para cuadrar nóminas.",
+  "start": {
+    "$date": "2021-01-25T10:30:00Z"
+  },
+  "color": "blue",
+  "end": {
+    "$date": "2021-01-25T11:30:00Z"
+  },
+  "createdAt": {
+    "$date": "2021-01-25T11:26:03.308Z"
+  },
+  "updatedAt": {
+    "$date": "2021-01-25T11:26:03.308Z"
+  },
+  "__v": 0
+}]

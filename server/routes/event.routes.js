@@ -1,45 +1,45 @@
 const express = require('express')
 const router = express.Router()
-const Phone = require('./../models/phone.model')
-const { checkId } = require('./middlewares')
+const Event = require('../models/event.model')
 
-router.get('/getAllPhones', (req, res) => {
 
-    Phone
+router.get('/getAllEvents', (req, res) => {
+
+    Event
         .find()
         .then(response => res.json(response))
         .catch(err => res.status(500).json(err))
 })
 
 
-router.get('/getOnePhone/:phone_id', (req, res) => {
+router.get('/getOneEvent/:event_id', (req, res) => {
 
-    Phone
-        .findById(req.params.phone_id)
+    Event
+        .findById(req.params.event_id)
         .then(response => res.json(response))
         .catch(err => res.status(500).json(err))
 })
 
-router.post('/newPhone', (req, res) => {
+router.post('/newEvent', (req, res) => {
 
-    Phone
+    Event
         .create(req.body)
         .then(response => res.json(response))
         .catch(err => res.status(500).json(err))
 })
 
-router.put('/editPhone/:phone_id', (req, res) => {
+router.put('/editEvent/:event_id', (req, res) => {
 
-    Phone
-        .findByIdAndUpdate(req.params.phone_id, req.body)
+    Event
+        .findByIdAndUpdate(req.params.event_id, req.body)
         .then(response => res.json(response))
         .catch(err => res.status(500).json(err))
 })
 
-router.delete('/deletePhone/:phone_id', (req, res) => {
+router.delete('/deleteEvent/:event_id', (req, res) => {
 
-    Phone
-        .findByIdAndDelete(req.params.phone_id, req.body)
+    Event
+        .findByIdAndDelete(req.params.event_id, req.body)
         .then(response => res.json(response))
         .catch(err => res.status(500).json(err))
 })
