@@ -4,8 +4,7 @@ export default class EventService {
 
     constructor() {
         this.apiHandler = axios.create({
-            baseURL: 'http://localhost:5000/api/event',
-            //baseURL: `${process.env.REACT_APP_API_URL}/events`,
+            baseURL: `${process.env.REACT_APP_API_URL}/event`,
         })
     }
 
