@@ -2,6 +2,8 @@
 
 This is a calendar using FullCalendar for JavaScript. You could display your events and also create some new when you click on the day you choose. 
 
+In case you want to use it, you just click on <https://sw-calendar.herokuapp.com/>
+
 <img src='https://res.cloudinary.com/jorgemaram/image/upload/v1611684197/fotos-webuild/muestra_Social_Wow_ch5vj0.jpg' alt='SocialWow example'>
 
 
