@@ -45,6 +45,7 @@ export default class SocialWowCalendar extends Component {
 
         this.setState({
             dateDayClicked: arg.dateStr,
+            endDateDayClicked: arg.dateStr,
             titleDayClicked: formatDate(arg.dateStr, {
                 month: 'long',
                 year: 'numeric',
@@ -70,7 +71,7 @@ export default class SocialWowCalendar extends Component {
                     events={this.state.events}
                 />
                 <Popup show={this.state.showModal} handleModal={this.handleModal} title={`Añadir cita para el ${this.state.titleDayClicked}`}>
-                    <EventForm closeModal={() => this.handleModal(false)} updateList={this.refreshEvents} startDate={this.state.dateDayClicked} />
+                    <EventForm closeModal={() => this.handleModal(false)} updateList={this.refreshEvents} startDate={this.state.dateDayClicked} endDate={this.state.endDateDayClicked}/>
                 </Popup>
             </>
 
