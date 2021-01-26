@@ -9,10 +9,10 @@ const eventSchema = new Schema({
         required: true
     },
 
-    backgroundColor: {
+    color: {
         type: String,
     },
-
+    
     start: {
         type: Date,
     },

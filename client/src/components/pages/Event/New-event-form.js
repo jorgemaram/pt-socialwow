@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import moment from 'moment'
-import { Container, Form, Button } from 'react-bootstrap'
+import { Form, Button } from 'react-bootstrap'
 import EventService from './../../../service/event.service'
 
 class EventForm extends Component {
@@ -10,7 +10,7 @@ class EventForm extends Component {
         this.state = {
             event: {
                 title: '',
-                backgroundColor: '',
+                color: '',
                 start: moment(this.props.startDate, 'YYYY-MM-DD'),
                 end: moment(this.props.startDate, 'YYYY-MM-DD'),
             },
@@ -45,26 +45,33 @@ class EventForm extends Component {
                 <div>
                     <Form onSubmit={this.handleSubmit}>
                         <Form.Group controlId="title">
-                            <Form.Label>Title</Form.Label>
+                            <Form.Label>Título</Form.Label>
                             <Form.Control type="text" name="title" value={this.state.event.title} onChange={this.handleInputChange} />
-                        </Form.Group>
-                        <Form.Group controlId="description">
-                            <Form.Label>Description</Form.Label>
-                            <Form.Control type="text" name="description" value={this.state.description} onChange={this.handleInputChange} />
                         </Form.Group>
                         <Form.Group controlId="color">
                             <Form.Label>Color</Form.Label>
-                            <Form.Control type="text" name="color" value={this.state.color} onChange={this.handleInputChange} />
+                            <Form.Control as="select" defaultValue="blue" name="color" value={this.state.event.color} onChange={this.handleInputChange} >
+                                <option>-- Seleccione --</option>
+                                <option value="yellow">Amarillo</option>
+                                <option value="blue">Azul</option>
+                                <option value="silver">Gris</option>
+                                <option value="orange">Naranja</option>
+                                <option value="black">Negro</option>
+                                <option value="red">Rojo</option>
+                                <option value="pink">Rosa</option>
+                                <option value="green">Verde</option>
+                            </Form.Control>
                         </Form.Group>
+
                         <Form.Group controlId="startStr">
-                            <Form.Label>Start time</Form.Label>
+                            <Form.Label>Hora de inicio</Form.Label>
                             <Form.Control type="time" name="startStr" value={this.state.startStr} onChange={this.handleDateChange} />
                         </Form.Group>
                         <Form.Group controlId="endStr">
-                            <Form.Label>End time</Form.Label>
+                            <Form.Label>Hora de fin</Form.Label>
                             <Form.Control type="time" name="endStr" value={this.state.endStr} onChange={this.handleDateChange} />
                         </Form.Group>
-                        <Button className="btn-dark" type="submit">Save the event</Button>
+                        <Button className="btn-success" type="submit">Guardar evento</Button>
                     </Form>
                 </div>
             </>
